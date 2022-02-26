@@ -6,5 +6,5 @@
   <p> Exercícios práticos que realizei durante o Curso PROA </p>
 <div>
 
-  <img src="img/proa.png" width="" height="">
+  <img src="from git/img/proa.png" width="" height="">
 </div>
