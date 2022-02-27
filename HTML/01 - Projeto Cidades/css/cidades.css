@@ -1,6 +1,15 @@
 
 /* ------- Edit Osasco -------- */
 
+
+#container_topo {
+    height: 60px;
+}
+
+nav ul li a{
+    color: black;
+}
+
 #container_osasco {
     display: flex;
     justify-content: center;

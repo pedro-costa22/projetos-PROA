@@ -60,10 +60,14 @@ const ribeirao = document.getElementById('ribeirao_over');
 
 function overOsasco() {
     osasco.classList.toggle(mouseOver);
+    
 }
 
 function leaveOsasco() {
     osasco.classList.toggle(mouseLeave);
+    osasco.src = './img/osasco.jpg'
+   
+    
 }
 
 function overGuarulhos(){
