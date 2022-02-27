@@ -8,17 +8,44 @@ body {
     background: hsl(208, 0%, 90%);;
 }
 
+html {
+    overflow-x: hidden;
+}
+
+/* ----- formatação geral ------ */
+
 
 .active {
-    color: rgb(187, 26, 26);
+    color: black;
 }
 
 .imgEdit {
     width: 500px;
     border-radius: 20px;
-    box-shadow: 10px 5px 5px rgb(209, 209, 209);
-   
+    box-shadow: 10px 5px 5px rgb(209, 209, 209); 
+} 
+
+::-webkit-scrollbar{
+    width: 5px;
 }
+
+::-webkit-scrollbar-thumb{
+    background: rgb(187, 26, 26);
+    border-radius: 1000px
+}
+
+.imgHover {
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(209, 209, 209); 
+}
+
+.imgHoverLeave {
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(209, 209, 209); 
+}
+
 
 /* ------- Style Topo -------- */
 
@@ -110,8 +137,29 @@ h1::after{
 }
 
 
+.menudrop ul li{
+    display: inline;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.menudrop ul li a{
+    color: rgb(187, 26, 26);
+    font-weight: 500;
+}
+
+.menudrop ul li a:hover {
+    text-decoration: none;
+    color: black;
+}
+.menudrop {
+    margin-top: 10px;
+}
+    
 
 .divisor {
+    display: flex;
+    justify-content: center;
     background: rgb(187, 26, 26);
     height: 3px;
     width: 1170px;
@@ -136,6 +184,7 @@ h1::after{
     justify-content: center;
     flex-wrap: wrap;
     width: 1270px;
+    margin-top: 50px;
 }
 
 .cidades h2 {
@@ -228,6 +277,34 @@ p {
 footer a{
     color: rgb(187, 26, 26); 
     font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Animation */
+
+
+[data-anime] {
+    opacity: 0; 
+    transition: .4s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
 
 
