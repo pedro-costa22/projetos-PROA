@@ -130,3 +130,428 @@ table th {
     margin-top: 200px;
     
 }
+
+/* ---- Footer ----- */
+.divisor2 {
+    background: rgb(187, 26, 26);
+    height: 3px;
+    width: 1170px;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.divisor2 ul {
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ---- Responsividade ----- */
+
+@media (max-width: 575.98px) {
+
+    /* Topo site */
+    #container_osasco {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+    }
+
+    .inicio_osasco {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        width: 300px;
+        height: 500px;
+        margin-top: 20px;
+    }
+
+    .textAnimation {
+        max-width: 700px;
+        margin: 40px;
+    }
+
+    #container_osasco img{
+        width: 350px;
+    }
+
+    /* Conteudo */
+
+    .divisor {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    .cidades_items p{
+        max-width: 300px;
+        margin: 30px;
+    }
+
+    .cidades {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 400px;
+        margin-top: 20px;
+    }
+
+    .cidades_items {
+        display: flex;
+        justify-content: flex-start;
+        width: 400px;
+        margin-top: 150px;
+    }
+
+    .container_cidades{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .container_cidades2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .imgEdit {
+        width: 350px;
+        height: 250px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    #footer_items{
+        display: flex;
+        justify-content: space-around;
+        width: 576px;
+        margin: 50px;
+    }
+
+    .divisor2 {
+        width: 350px;
+    }
+
+    ul {
+        display: block;
+    }
+
+    table {
+        width: 250px;
+    }
+   
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Topo site */
+    #container_osasco {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+    }
+
+    .inicio_osasco {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        width: 576px;
+        height: 500px;
+        margin-top: 20px;
+    }
+
+    .textAnimation {
+        max-width: 700px;
+        margin: 40px;
+    }
+
+    #container_osasco img{
+        width: 500px;;
+    }
+
+    /* Conteudo */
+
+    .divisor {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    .cidades_items p{
+        max-width: 576px;
+        margin: 30px;
+    }
+
+    .cidades {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 576px;
+        margin-top: 20px;
+    }
+
+    .cidades_items {
+        display: flex;
+        justify-content: flex-start;
+        width: 1270px;
+        margin-top: 150px;
+    }
+
+    .container_cidades{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .container_cidades2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .imgEdit {
+        width: 550px;
+        height: 350px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    #footer_items{
+        display: flex;
+        justify-content: space-around;
+        width: 576px;
+        margin: 50px;
+    }
+
+    .divisor2 {
+        width: 550px;
+        
+    }
+
+    table {
+        width: 550px;
+    }
+  
+ 
+}
+   
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Topo site */
+    #container_osasco {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+    }
+    
+    .inicio_osasco {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        width: 768px;
+        height: 500px;
+        margin-top: 20px;
+    }
+    
+    .textAnimation {
+        max-width: 700px;
+        margin: 40px;
+    }
+
+    #container_osasco img{
+        width: 700px;
+    }
+
+    /* Conteudo */
+
+    .divisor {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    
+    .cidades_items p{
+        max-width: 768px;
+        margin: 30px;
+    }
+    
+    .cidades {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 768px;
+        margin-top: 20px;
+    }
+    
+    .cidades_items {
+        display: flex;
+        justify-content: flex-start;
+        width: 1270px;
+        margin-top: 150px;
+    }
+    
+    .container_cidades{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .container_cidades2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .imgEdit {
+        width: 550px;
+        height: 350px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    #footer_items{
+        display: flex;
+        justify-content: space-around;
+        width: 768px;
+    }
+
+    .divisor2 {
+        width: 750px;
+    }
+
+    table {
+        width: 740px;
+    }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+    /* Topo site */
+    #container_osasco {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+    }
+    
+    .inicio_osasco {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        width: 992px;
+        height: 500px;
+        margin-top: 20px;
+    }
+    
+    .textAnimation {
+        max-width: 700px;
+        margin: 40px;
+    }
+
+    #container_osasco img{
+        width: 900px;
+    }
+
+    /* Conteudo */
+
+    .divisor {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    
+    .cidades_items p{
+        max-width: 992px;
+        margin: 30px;
+    }
+    
+    .cidades {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 992px;
+        margin-top: 20px;
+    }
+    
+    .cidades_items {
+        display: flex;
+        justify-content: flex-start;
+        width: 1270px;
+        margin-top: 150px;
+    }
+    
+    .container_cidades{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .container_cidades2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .imgEdit {
+        width: 550px;
+        height: 350px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    #footer_items{
+        display: flex;
+        justify-content: space-around;
+        width: 992px;
+    }
+
+    .divisor2 {
+        width: 950px;
+    }
+
+   
+   
+}

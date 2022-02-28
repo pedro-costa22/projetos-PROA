@@ -166,6 +166,12 @@ h1::after{
     border-radius: 100%;
 }
 
+.checkbtn {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    display: none;
+}
+
 /* ------- Style Cidades -------- */
 
 #container_cidades{
@@ -308,8 +314,352 @@ footer a:hover {
 
 
 
+/* ------ Responsividade ------- */
+
+@media (max-width: 575.98px) {
+
+     /* ----- Topo ----- */
+     #container_inicio {
+        background-image: url(../img/saopaulo.jpg);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+    }
+    
+    .inicio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 500px;
+        
+    }
+    .logosp {
+        height: 150px;
+        margin-top: 110px;
+    }
+    
+    .textAnimation {
+        max-width: 300px;
+        margin-bottom: 110px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    /* ---- Navbar ----- */
+    .divisor {
+        width: 300px;
+    }
+
+    .menudrop ul li a{
+        color: rgb(187, 26, 26);
+        font-weight: 500;
+        font-size: 10px;
+        display: none;
+    }
+
+    /* ------- Cidades ------ */
+    
+    #container_cidades{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .cidades {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        margin-top: 50px;
+    }
+
+   .informacoes {
+       display: flex;
+       flex-direction: column;
+       
+   }
+
+    .cidades_items {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 300px;
+        margin-top: 150px;
+        padding-bottom: 10px;
+    }
+   
+    .imgEdit {
+        width: 300px;
+        border-radius: 20px;
+        box-shadow: 10px 5px 5px rgb(209, 209, 209); 
+    }
 
 
+    p {
+        font-size: large;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .cidades_items p{
+        max-width: 300px;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+     /* ------ Footer ------ */
+     #footer_items{
+        display: flex;
+        justify-content: space-around;
+       width: 300px;
+    }
+
+    .divisor2 {
+        width: 300px;
+    }
+
+    .btn-edit {
+        margin: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* ----- Topo ----- */
+    #container_inicio {
+        background-image: url(../img/saopaulo.jpg);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+    }
+    
+    .inicio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 576px;
+        height: 500px;
+        
+    }
+    .logosp {
+        height: 150px;
+        margin-top: 110px;
+    }
+    
+    .textAnimation {
+        max-width: 400px;
+        margin-bottom: 110px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    /* ---- Navbar ----- */
+    .divisor {
+        width: 576px;
+    }
+
+    .menudrop ul li a{
+        color: rgb(187, 26, 26);
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    /* ------- Cidades ------ */
+    
+    #container_cidades{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .cidades {
+        display: flex;
+        justify-content: center;
+        width: 576px;
+        margin-top: 50px;
+    }
+
+   .informacoes {
+       display: flex;
+       flex-direction: column;
+       
+   }
+
+    .cidades_items {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 576px;
+        margin-top: 150px;
+        padding-bottom: 10px;
+    }
+   
+    .imgEdit {
+        width: 350px;
+        border-radius: 20px;
+        box-shadow: 10px 5px 5px rgb(209, 209, 209); 
+    }
 
 
+    p {
+        font-size: large;
+        font-weight: 600;
+        font-size: 15px;
+    }
 
+    .cidades_items p{
+        max-width: 300px;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+     /* ------ Footer ------ */
+     #footer_items{
+        display: flex;
+        justify-content: space-around;
+        width: 576px;
+    }
+
+    .divisor2 {
+        width: 576px;
+    }
+
+    .btn-edit {
+        margin: 15px;
+    }
+
+  
+}
+    
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+    /* ----- Topo ----- */
+    #container_inicio {
+        height: 400px;
+    }
+    
+    .logosp {
+        height: 200px;
+    }
+    
+    .textAnimation {
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    /* ---- Navbar ----- */
+    .divisor {
+        width: 768px;
+    }
+
+    .menudrop ul li a{
+        color: rgb(187, 26, 26);
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    /* ------- Cidades ------ */
+    .cidades {
+        width: 768px;
+       
+    }
+
+    .imgEdit {
+        width: 300px;
+        border-radius: 20px;
+        box-shadow: 10px 5px 5px rgb(209, 209, 209); 
+    }
+
+    p {
+        font-size: large;
+        text-align: left;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+     /* ------ Footer ------ */
+     #footer_items{
+        display: flex;
+        justify-content: space-around;
+        width: 768px;
+    }
+
+    .divisor2 {
+        width: 768px;
+    }
+
+
+    
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+    /* ------ Topo ------ */
+    #container_inicio {
+        height: 400px;
+    }
+    
+    .logosp {
+        height: 200px;
+    }
+    
+    .textAnimation {
+        max-width: 600px;
+    }
+
+    /* ------ Navbar ------ */
+
+    .divisor {
+        width: 992px;
+       
+    }
+
+    
+
+    /* ------- Style Cidades -------- */
+
+    .cidades {
+        width: 992px;
+       
+    }
+
+    /* ------ Footer ------ */
+    #footer_items{
+        display: flex;
+        justify-content: space-around;
+        width: 992px;
+    }
+
+    .divisor2 {
+        width: 992px;
+    }
+
+
+    
+    
+}
