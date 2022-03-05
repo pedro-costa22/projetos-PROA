@@ -46,3 +46,32 @@ const texto = document.querySelector("#textAnime");
 textoAnimado(texto)
 
 
+// Scroll Suave 
+
+const menuItems = document.querySelectorAll('.navbar a[href^="#"]');
+
+menuItems.forEach(item => {
+    item.addEventListener("click", scrollToId)
+})
+
+function scrollToId(event){
+    event.preventDefault();
+    const to = ScrollArgument(event.target);
+
+    scrollSuave(to)
+}
+
+function ScrollArgument(element){
+    const id = element.getAttribute('href');
+    return document.querySelector(id).offsetTop;
+}
+
+function scrollSuave(to){
+    window.scroll ({
+        top: to,
+        behavior: "smooth"
+    })
+}
+
+
+
