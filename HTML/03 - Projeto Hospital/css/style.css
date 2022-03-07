@@ -11,6 +11,15 @@
     --border:.2rem solid var(--green);
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--green);
+    border-radius: 100px;
+}
+
 *{
     font-family: 'Poppins', sans-serif;
     margin:0; padding: 0;
