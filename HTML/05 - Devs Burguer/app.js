@@ -41,7 +41,7 @@ menuList.forEach(item =>{
 
 function scrollToId(event) {
     event.preventDefault();
-    const to = scrollToPosition(event.target) - 30;
+    const to = scrollToPosition(event.target) - 65;
     
     windowScrollMooth(to)
 }
@@ -60,13 +60,26 @@ function windowScrollMooth(to){
 
 
 /* ------- Navbar Fixed ----- */
-var navbar = document.querySelector('.container_nav')
 
-navbar.addEventListener("scroll", navbarPosition)
+window.addEventListener('scroll', alturaScroll)
 
-function navbarPosition(){
-    const positionSobre = document.querySelector('#home').offsetTop;
-    console.log(positionSobre)
+function alturaScroll(){
+    const navbar = document.querySelector('.container_nav');
+    const sobre = document.querySelector('#container_sobre');
+    let altura = sobre.offsetTop;
+    let windowTopo = window.pageYOffset;
+    
+    if(windowTopo >= altura) {
+        navbar.classList.add('navbarFixed');
+       
+    } else {
+        navbar.classList.remove('navbarFixed');
+
+    }
 }
+
+
+
+
 
 

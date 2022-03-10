@@ -39,6 +39,7 @@ body {
     width: 100%;
     height: 80px;
     background: none;
+    
 }
 
 .container_nav {
@@ -48,11 +49,19 @@ body {
     text-align: center;
     width: 1370px;
     height: 80px;
+    position: relative;
 }
 
 .navbarFixed {
     position: fixed;
+    z-index: 1;  
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 0rem 16rem; 
+    box-shadow: .2rem .2rem 0 rgba(0, 0, 0, .3);
 }
+
+
 
 header ul li{
     list-style: none;
@@ -190,8 +199,8 @@ header ul li a:hover {
     justify-content: center;
     width: 100%;
     height: 50em;
-    background: #fff;
-    background-image: url(../images/fundo-2.png);
+    background: #edeee9;
+    
 }
 
 .sobre_items {
@@ -228,7 +237,7 @@ header ul li a:hover {
     max-width: 600px;
     font-weight: 900;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: rgb(27, 27, 27);;
+    color: rgb(27, 27, 27);
     font-size: 18px;
 }
 
@@ -249,374 +258,296 @@ header ul li a:hover {
 }
 
 
+/* ---------- Style cardpaio -------- */
+#container_cardapio {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #edeee9;
+}
 
-
-
-
-
-
-
-
-@media screen and (max-width: 575.98px) {
-
-    #menu-btn {
-        display: block;
-    }
-
-    header ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #fff;
-        top: 80px;
-        right: -100%;
-        transition: all .5s;
-    }
-
-    header ul li{
-        display: block;
-        padding: 15px 15px;
-        text-align: left;
-    }
-
-    header ul li a {
-        color: #000;
-    }
-
-    .active {
-        right: 0%;
-    }
-
-    /* ---- Txt ---- */
-   
-    .text_inicio{
-        width: 991px;
-        height: 100vh;
-    }
+.cardapio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1470px;
     
-    .text_inicio h1 {
-        color: #fff;
-        font-size: 15px;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        text-shadow: .1rem .1rem 0 rgba(0, 0, 0, .3);
-    
-    }
-    
-    .text_inicio span {
-        color: #ffc107;
-        font-weight: bold;
-        font-size: 30px;
-        text-transform: uppercase;
-    }
-    
-    .btn-lanches {
-        background: none;
-        color: #000;
-        font-size: 12px;
-        font-weight: bold;
-    }
-    
-    .btn-lanches {
-        background: rgb(163, 5, 5);;
-        color: #fff;
-        border-radius: 10px;
-        font-size: 16px;
-        font-weight: 600;
-        text-transform: uppercase;
-        width: 270px;
-        padding: 10px;
-        margin-left: 20px;
-        cursor: pointer;
-        transition: color 0.5 ease;
-    }
-    
-    .btn-lanches:hover {
-        color: #ffc107;
-        transition: all; 
-    }
+}
 
-    /* ---- Topo site ---- */
+.cardapio_text{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
 
-    #container_sobre {
-        height: 70em;
-    }
+.cardapio_text h3 {
+    font-size: 80px;
+    color: rgb(163, 5, 5);
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+.cardapio_text p {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.cardapio_items {
+    display: flex;
+    justify-content: center;
     
-    .sobre_items {
-        flex-direction: column;
-        align-items: center;
-        width: 400px;
-    }
-    
-    .sobre_items img {
-        width: 300px;
-        height: 300px;
-        margin-top: 40px;
-    }
+}
 
-    .sobre_items p {
-        font-size: 13px;
-        max-width: 300px;
-    }
+.lanche {
+    width: 350px;
+    height: 400px;
+    margin: 5px 10px 30px 10px;
+    text-align: center;
+    background: #fff;
+    box-shadow: .2rem .2rem 0 rgba(0, 0, 0, .1);
+}
 
-    .sobre_items h3  {
-        font-size: 15px;
-    }
+.cardapio_items p {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(163, 5, 5);
+}
 
-    .sobre_items h3  span{
-        font-size: 20px;
-    }
+.cardapio_items p span {
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.cardapio_items img {
+    margin-top: 20px;
+    width: 250px;
 }
 
 
+.btn-pedir {
+    background: none;
+    color: rgb(163, 5, 5);
+    border: 2px solid rgb(163, 5, 5);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 220px;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.5 ease;
+}
 
-@media screen and (min-width: 576px) and (max-width: 767.98px) {
-
-    /* Header */
-    #menu-btn {
-        display: block;
-    }
-
-    header ul{
-        position: fixed;
-        width: 50%;
-        height: 100vh;
-        background: #fff;
-        top: 80px;
-        right: -100%;
-        transition: all .5s;
-    }
-
-    header ul li{
-        display: block;
-        padding: 15px 15px;
-        text-align: left;
-    }
-
-    header ul li a {
-        color: #000;
-    }
-
-    .active {
-        right: 0%;
-    }
-
-
-
-    /* -- Sobre --- */
-    #container_sobre {
-        height: 70em;
-    }
-    
-    .sobre_items {
-        flex-direction: column;
-        align-items: center;
-        width: 576px;
-    }
-    
-    .sobre_items img {
-        width: 400px;
-        height: 400px;
-        margin-top: 40px;
-    }
-
-    .sobre_items h3{
-        line-height: 3.0em;
-        max-width: 500px;
-        font-size: 20px;
-        margin-top: 100px;
-        color: #000;
-        font-weight: bold;
-        font-family: "Trebuchet MS", Helvetica, sans-serif;
-    }
-    
-    .sobre_items h3 span{
-        font-size: 30px;
-        color: rgb(163, 5, 5);
-        font-weight: 600;
-    }
-    
-
-    .sobre_items p {
-        max-width: 400px;
-        font-weight: 900;
-        font-family: "Trebuchet MS", Helvetica, sans-serif;
-        color: rgb(27, 27, 27);;
-        font-size: 15px;
-    }
-
-    /* ---- Txt ---- */
-   
-    .text_inicio{
-        width: 991px;
-        height: 100vh;
-    }
-    
-    .text_inicio h1 {
-        color: #fff;
-        font-size: 30px;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        text-shadow: .3rem .3rem 0 rgba(0, 0, 0, .3);
-    
-    }
-    
-    .text_inicio span {
-        color: #ffc107;
-        font-weight: bold;
-        font-size: 50px;
-        text-transform: uppercase;
-    }
-    
-    .btn-lanches {
-        background: none;
-        color: #000;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    
-    .btn-lanches {
-        background: rgb(163, 5, 5);;
-        color: #fff;
-        border-radius: 10px;
-        font-size: 16px;
-        font-weight: 600;
-        text-transform: uppercase;
-        width: 270px;
-        padding: 10px;
-        margin-left: 20px;
-        cursor: pointer;
-        transition: color 0.5 ease;
-    }
-    
-    .btn-lanches:hover {
-        color: #ffc107;
-        transition: all; 
-    }
-    
-
+.btn-pedir:hover {
+    background-color: rgb(163, 5, 5);
+    color: #fff;
+    transition: all;
 }
 
 
 
 
 
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
+/* ------ Contato  ------ */
 
-
-    /* ---- Topo site ---- */
-    #menu-btn {
-        display: block;
-    }
-
-    header ul{
-        position: fixed;
-        width: 50%;
-        height: 100vh;
-        background: #fff;
-        top: 80px;
-        right: -100%;
-        transition: all .5s;
-    }
-
-    header ul li{
-        display: block;
-        padding: 15px 15px;
-        text-align: left;
-    }
-
-    header ul li a {
-        color: #000;
-    }
-
-    .active {
-        right: 0%;
-    }
-
-
-    /* ---- Topo site ---- */
-
-    #container_sobre {
-        height: 70em;
-    }
-    
-    .sobre_items {
-        flex-direction: column;
-        align-items: center;
-        width: 991px;
-    }
-    
-    .sobre_items img {
-        width: 400px;
-        height: 400px;
-        margin-top: 40px;
-    }
-
-
-
-/* ---- Txt ---- */
-   
-    .text_inicio{
-        width: 991px;
-        height: 100vh;
-    }
-    
-    .text_inicio h1 {
-        color: #fff;
-        font-size: 30px;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        text-shadow: .3rem .3rem 0 rgba(0, 0, 0, .3);
-    
-    }
-    
-    .text_inicio span {
-        color: #ffc107;
-        font-weight: bold;
-        font-size: 50px;
-        text-transform: uppercase;
-    }
-    
-    .btn-lanches {
-        background: none;
-        color: #000;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    
-    .btn-lanches {
-        background: rgb(163, 5, 5);;
-        color: #fff;
-        border-radius: 10px;
-        font-size: 16px;
-        font-weight: 600;
-        text-transform: uppercase;
-        width: 270px;
-        padding: 10px;
-        margin-left: 20px;
-        cursor: pointer;
-        transition: color 0.5 ease;
-    }
-    
-    .btn-lanches:hover {
-        color: #ffc107;
-        transition: all; 
-    }
-   
-    
-   
-    
-    
-
-    
-   
-   
-
-
+#contato {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #ccc;
 }
+
+.contato_items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    height: 720px;
+    width: 1470px;
+    background: #fff;
+    border-radius: 15px
+    
+}
+
+.contato_img {
+    display: flex;
+    align-content: center;
+    float: left;
+    width: 40%;
+    background: #fde7a3;  
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.contato_img img {
+    width: 570px;
+    margin-left: 10px;   
+}
+
+.form {
+    width: 58%;
+    padding-top: 40px;
+    
+}
+
+.form h5 {
+    color: #ffc107;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center; 
+   
+}
+
+.form label {
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+}
+
+.form input {
+    width: 390px;
+    height: 35px;
+    border: none;
+    padding-left: 5px;
+}
+
+input:hover{
+    color: #fff;
+    border: none;
+}
+
+.inputEdit {
+    border: 2px solid #ffc107;
+    width: 400px;
+    border-radius: 5px;
+}
+
+
+textarea {
+    border: 2px solid #ffc107;
+    width: 700px;
+    min-height: 100px;
+    max-height: 150px;
+    border-radius: 5px;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(78, 78, 78);
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.btn-form {
+    width: 200px;
+    color: #fff;
+    background: #ffc107;
+    font-weight: bold;
+}
+
+.btn-form:hover {
+    color: #000;
+}
+
+
+
+/* ------review ------ */
+
+#review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background: #ccc;
+}
+
+.review_items {
+    display: flex;
+    width: 1570px;
+    justify-content: space-between;
+}
+.review-user {
+    background: #fff;
+    width: 500px;
+    height: 500px;
+}
+
+.textReview h5 {
+    color: rgb(163, 5, 5);
+    font-size: 60px;
+    margin: 100px 0px 40px 0px;
+}
+
+
+/* ------Footer ------ */
+#footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background: rgb(32, 32, 32);
+}
+
+.footer_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1370px;
+}
+
+.contatosCenter {
+    display: flex;
+    text-align: center;
+}
+
+.footer_items p{
+    color: #ffc107;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer_items ul li a{
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer_items ul li a:hover{
+    margin-left: 8px;
+}
+
+.footer_items ul li{
+    padding: 5px 0px 5px 0px;
+    list-style: none;
+}
+
+
+.redesfooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redesfooter p {
+    color: #fff;
+}
+
+.icons a{
+    color: #ffc107;
+    padding: 0px 10px 10px 10px;
+   
+}
+.icons {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
 
 /* ------ Animation ------ */
 
