@@ -1,0 +1,76 @@
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: open;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    box-shadow: border-box;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1em;
+    color: #333;
+}
+
+p{
+    font-size: 1em;
+    color: #777;
+}
+
+
+
+/* ---------- Header style ------------- */
+
+.cabecalho {
+    width: 100%;
+    float: left;
+    padding: 50px 8%;
+    background-color: #13c7ae;
+}
+
+.logo a{
+    width: 221px;
+    height: 48px;
+    float: left;
+    background-image: url(../img/logo.png);
+    font-size: 0;
+}
+
+.cabecalho form {
+    width: 30%;
+    float: right;
+}
+
+.cabecalho input[type="text"]{
+    width: 85%;
+    float: left;
+    padding: 15px 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.cabecalho button {
+        width: 15%;
+        float: right;
+        padding: 15px 10px;
+        background-color: #0cae98;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 0 10px 10px 0px;
+}

@@ -62,7 +62,6 @@ body {
 }
 
 
-
 header ul li{
     list-style: none;
     display: inline-block;
@@ -118,6 +117,7 @@ header ul li a:hover {
     position: relative;
     cursor: pointer;
     transition: color 0.5 ease;
+    padding: 8px;
 }
 
 .btn-edit:hover {
@@ -140,12 +140,17 @@ header ul li a:hover {
 
 .text_inicio{
     display: flex;
-    justify-content: center;
+    padding-top: 150px;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100vh;
 }
+
+.text_inicio img {
+    width: 300px;
+}
+
 
 .text_inicio h1 {
     color: #fff;
@@ -228,7 +233,7 @@ header ul li a:hover {
 }
 
 .sobre_items img {
-    width: 500px;
+    width: 700px;
     height: 500px;
     margin-top: 40px;
 }
@@ -254,8 +259,10 @@ header ul li a:hover {
 }
 
 .btn-sobre:hover {
-    color: rgb(163, 5, 5);
+    color: rgb(0, 0, 0);
+    width: 170px;
 }
+
 
 
 /* ---------- Style cardpaio -------- */
@@ -306,6 +313,13 @@ header ul li a:hover {
     text-align: center;
     background: #fff;
     box-shadow: .2rem .2rem 0 rgba(0, 0, 0, .1);
+}
+
+.lanche img:hover {
+    position: relative;
+    transition: all .5s ease;
+    cursor: pointer;
+    top: -6px;
 }
 
 .cardapio_items p {
@@ -454,29 +468,79 @@ textarea {
 /* ------review ------ */
 
 #review {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 1000px;
-    background: #ccc;
+    background-color: #ccc;
+    text-align: center;
+    height: 50rem;
 }
 
-.review_items {
-    display: flex;
-    width: 1570px;
-    justify-content: space-between;
-}
-.review-user {
-    background: #fff;
-    width: 500px;
-    height: 500px;
-}
-
-.textReview h5 {
+#review h5 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
     color: rgb(163, 5, 5);
-    font-size: 60px;
-    margin: 100px 0px 40px 0px;
+    text-transform: uppercase;
+    text-shadow: .2rem .2rem 0 rgba(0, 0, 0, .1);
+} 
+
+#review .review_items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2rem; 
+    width: 1470px;
+    margin: auto;
+}
+
+#review .review_items .review-user {
+    border: #ffc107;
+    box-shadow: .2rem .2rem 0 rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    padding: 2.5rem;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#review .review_items .review-user img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .5rem solid #fff;
+}
+
+#review .review_items .review-user h3 {
+    color: #fff;
+    font-size: 2.2rem;
+    padding: .5rem 0;
+}
+
+#review .review_items .review-user .stars i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#review .review_items .review-user p {
+    line-height: 1.8;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+#review .review_items .review-user::before{
+    content: "";
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffc107;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 25rem;
+    width: 120%;
+    z-index: -1;
+
 }
 
 
@@ -568,5 +632,6 @@ textarea {
     transform: translate3d(0px, 0px, 0px);
     opacity: 1;
 }
+
 
 
