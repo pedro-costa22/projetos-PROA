@@ -49,7 +49,6 @@ body {
     text-align: center;
     width: 1370px;
     height: 80px;
-    position: relative;
 }
 
 .navbarFixed {
@@ -64,7 +63,7 @@ body {
 
 header ul li{
     list-style: none;
-    display: inline-block;
+    display: inline;
     margin-top: 18px;
 }
 
@@ -120,11 +119,24 @@ header ul li a:hover {
     padding: 8px;
 }
 
-.btn-edit:hover {
+.efeito::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 0px;
+    height: 42px;
     background: #ffc107;
-    color: #000;
-    transition: all;
+    border-radius: 6px;
+    transition: all 1s ease;
+    z-index: -1;
 }
+
+.efeito:hover::before{
+    width: 100%;
+}
+
+
 
 
 /* ---------- Style Slide inicio -------- */
