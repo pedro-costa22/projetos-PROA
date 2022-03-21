@@ -10,10 +10,11 @@ limpar.addEventListener("click", clean);
 function antecessor(){
     let numero = Number(number.value);
     let antecessor = numero - 1;
+    let sucessor = numero + 1;
 
     if(numero > 0){
-        resultado.innerHTML = `O número que antecede ${numero} é: 
-        ${antecessor}` 
+        resultado.innerHTML = `O número que antecede ${numero} é: ${antecessor} <br>
+                                O número sucessor de ${numero} é: ${sucessor} ` 
     } else {
         alert("ERRO! Digite um valor maior que 0 para verificar")
     }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numero Antecessor</title>
+    <title>Revendedora de carros usados</title>
 
     <style>
 
@@ -13,7 +13,7 @@
 
         }
         .container {
-            display: grid;
+            display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
@@ -23,22 +23,23 @@
 
         .box {
             display: grid;
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr 2fr );
             text-align: center;
             background-color: #fff;
             border-radius: 10px;
             width: 400px;
-            height: 400px;
+            height: 600px;
             box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.2);
         }
 
         .boxItem {
             background-color: #fff;
             width: 400px;
-            height: 100px;
+            height: 280px;
+            
         }
 
-        .box #number {
+        .box .number {
             margin-bottom: 10px;
             width: 80%;
             height: 40px;
@@ -70,6 +71,7 @@
             font-size: 25px;
             color: #3EC1D5;
             margin-bottom: 60px;
+            
         }
 
        
@@ -79,6 +81,20 @@
             font-family: "Poppins", sans-serif;
         }
 
+        .retangulo {
+            width: 100px;
+            height: 60px;
+            border: #3EC1D5;
+        }
+
+        .retangulo {
+            width: 100px;
+            height: 60px;
+            border: #3EC1D5;
+        }
+
+       
+
     </style>
 </head>
 <body>
@@ -86,24 +102,24 @@
     <div class="container">
         <div class="box">
 
-            <h3>Verificar n° antecessor / sucessor</h3>
+            <h3>Revendedora de carros</h3>
 
             <div class="boxItem">
-                <input type="number" id="number" class="number" placeholder="Digite um valor ...">
-                <input type="submit" id="verificar" class="btn" value="verificar">
+                <input type="number" id="carros" class="number" placeholder="Informe o total de carros vendidos...">
+                <input type="number" id="vendas" class="number" placeholder="Informe o valor total das vendas...">
+                <input type="number" id="salario" class="number" placeholder="Informe o valor do salario fixo...">
+                <input type="number" id="comissao" class="number" placeholder="Comissao ganha por carro vendido...">
+                <input type="submit" id="verificar" class="btn" value="Calcular">
                 <input type="submit" id="limpar" class="btn" value="Limpar">
             </div>
 
-
             <div class="box-result">
-                <p id="resultado">Aguardando valor...</p>
+                <p id="resultado">Aguardando valores...</p>
             </div>
-
         </div>
     </div>
     
 
-    <script src="antecessor.js"></script>
-    
+    <script src="revendedora.js"></script>
 </body>
 </html>
