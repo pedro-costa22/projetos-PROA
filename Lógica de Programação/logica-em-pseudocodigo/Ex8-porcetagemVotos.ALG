@@ -1,4 +1,6 @@
 Algoritmo "Porcentagem de votos"
+//  
+//  
 // 
 //  
 // Descrição   : Aqui você descreve o que o programa faz! (função)
