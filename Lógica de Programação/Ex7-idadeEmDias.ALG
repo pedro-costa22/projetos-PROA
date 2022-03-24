@@ -1,4 +1,6 @@
 Algoritmo "Idade em Dias"
+//  
+//  
 // 
 //  
 // Descrição   : recebe a data de nascimento e escreve a idade em dias.

@@ -1,4 +1,6 @@
 Algoritmo "Numero Antecessor"
+//  
+//  
 // 
 //  
 // Descrição   : Recebe um valor e escreve na tela o valor antecessor.

@@ -8,15 +8,15 @@ Algoritmo "Revendedora de carros"
 // Data atual  : 21/03/2022
 Var
 // Seção de Declarações das variáveis 
-   salario, valorVendas: Real
-   carVend, pcComissao: Inteiro
+   comissaoFixa, salario, comissaoVariavel, SalarioFinal, valorVendas, valorCarroVendido: Real
+   qtdCarroVendido, pcComissao: Inteiro
 
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
 
    escreva("Total de carros vendidos: ")
-   leia(carVend)
+   leia(qtdCarroVendido)
    
    escreva("Informe o valor total de suas vendas: ")
    leia(valorVendas)
@@ -24,14 +24,14 @@ Inicio
    escreva("Informe o valor do salario fixo: ")
    leia(salario)
    
-   escreva("Porcentagem da comissão por  carro vendido: ")
-   leia(pcComissao)
+   escreva("Comissão fica para cada carro vendido: ")
+   leia(valorCarroVendido)
    
-   pcComissao <- pcComissao * carVend
-   valorVendas <- valorVendas * (5 / 100)
-   salario <-  salario + pcComissao + valorVendas
+   comissaoFixa <- qtdCarroVendido * valorCarroVendido
+   comissaoVariavel <- valorVendas * (5/100)
+   salarioFinal <- salario + comissaoFixa + comissaoVariavel
    
-   escreva("O valor final que o vendedor irá receber é: ", salario)
+   escreva("O valor final que o vendedor irá receber é: ", salarioFinal)
    
    
 
