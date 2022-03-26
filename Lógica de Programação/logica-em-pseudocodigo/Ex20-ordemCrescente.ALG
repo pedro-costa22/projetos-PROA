@@ -1,4 +1,6 @@
 Algoritmo "Exercício 20"
+//  
+//  
 // 
 //  
 // Descrição   : Recebe dois valores e informa a ordem crescente entre eles.

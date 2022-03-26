@@ -35,7 +35,7 @@ Inicio
         fimse
    fimse
    
-   escreva("A duração da partida foi: ", horasJogadas, "Horas")
+   escreva("A duração da partida foi: ", horasJogadas, " Horas")
 
 
 Fimalgoritmo

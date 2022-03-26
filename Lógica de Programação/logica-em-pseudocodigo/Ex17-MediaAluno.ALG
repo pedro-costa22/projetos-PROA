@@ -1,4 +1,6 @@
 Algoritmo "Exercício 17"
+//  
+//  
 // 
 //  
 // Descrição   : Calcula a media de um aluno e informa se ele foi aprovado ou reprovado.

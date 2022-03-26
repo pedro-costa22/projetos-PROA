@@ -1,4 +1,6 @@
 Algoritmo "Exercício 15"
+//  
+//  
 // 
 //  
 // Descrição   : Recebe um valor e informa se ele é positivo ou negativo.

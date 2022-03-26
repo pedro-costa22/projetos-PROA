@@ -1,0 +1,67 @@
+/* ---- Formatações gerais ----- */
+
+html {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ffc107;
+    border-radius: 1000px
+}
+
+header a {
+    font-weight: 600;
+}
+
+
+
+#home {
+    background: #ffc107;
+    color: white;
+}
+
+.caixa {
+    padding: 60px 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+footer p a {
+    margin: 5px 15px;
+    
+}
+
+footer a{
+    color: black
+}
+footer a:hover{
+    color: #ffc107;
+    text-decoration: none;
+}
+
+
+/*---- responsive ----*/
+
+@media screen and (max-width: 575.98px) {
+    form {
+        width: 320px;
+    } 
+    
+    #home h1 {
+        font-size: 50px;
+    } 
+   
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .img-ajust img {
+        width: 350px;
+    }
+}
+
+
+
