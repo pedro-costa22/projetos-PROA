@@ -1,4 +1,6 @@
 Algoritmo "Exercício 39"
+//  
+//  
 // 
 //  
 // Descrição   : Avalia se as expressões são True or False;
