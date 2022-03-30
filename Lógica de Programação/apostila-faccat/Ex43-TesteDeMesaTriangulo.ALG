@@ -1,4 +1,6 @@
 Algoritmo "Exercicio 43"
+//  
+//  
 //
 //
 // Descrição   : Teste de mesa (Triangulo equilatero)

@@ -1,4 +1,6 @@
 Algoritmo "Exercício 41"
+//  
+//  
 // 
 //  
 // Descrição   : Calcula a media de aproveitamento dos alunos.

@@ -1,4 +1,6 @@
 Algoritmo "Exercicío 32"
+//  
+//  
 // 
 //  
 // Descrição   : Racebe o nome de dois times e a quantidade de gols e imprimi o resultado da partida.

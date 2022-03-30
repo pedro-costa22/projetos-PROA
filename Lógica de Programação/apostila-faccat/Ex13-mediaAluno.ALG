@@ -1,4 +1,6 @@
 Algoritmo "Média do Aluno"
+//  
+//  
 // 
 //  
 // Descrição   : Calcula e informa e media final de um aluno.

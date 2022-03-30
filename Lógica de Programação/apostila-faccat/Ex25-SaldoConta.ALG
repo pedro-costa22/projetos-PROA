@@ -1,4 +1,6 @@
 Algoritmo "Exercicio 25"
+//  
+//  
 // 
 //  
 // Descrição   : Verifica se o saldo da conta do cliente está positivo ou negativo e o informa.

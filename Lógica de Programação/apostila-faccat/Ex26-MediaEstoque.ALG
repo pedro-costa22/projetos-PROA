@@ -1,4 +1,6 @@
 Algoritmo "Exercicio 25"
+//  
+//  
 // 
 //  
 // Descrição   : Calcula a media de um estoque
