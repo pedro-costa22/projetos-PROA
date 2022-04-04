@@ -633,4 +633,271 @@ function exer42(){
 
     
 }
+
+function exer43(){
+    let valor = parseInt(prompt("Informe um valor para conferir a tabuada:"))
+    let cont = 1;
+    let contador = Array()
+    let mult = Array();
+    let soma = null;
+
+    while (cont <= 10){
+        soma = valor * cont
+        mult.push(soma);
+        contador.push(cont)
+        cont++   
+    }
+
+    alert(`    ${valor} x ${contador[0]} = ${mult[0]} 
+    ${valor} x ${contador[1]} = ${mult[1]} 
+    ${valor} x ${contador[2]} = ${mult[2]} 
+    ${valor} x ${contador[3]} = ${mult[3]}
+    ${valor} x ${contador[4]} = ${mult[4]}
+    ${valor} x ${contador[5]} = ${mult[5]}
+    ${valor} x ${contador[6]} = ${mult[6]}
+    ${valor} x ${contador[7]} = ${mult[7]}
+    ${valor} x ${contador[8]} = ${mult[8]}
+    ${valor} x ${contador[9]} = ${mult[9]}`)
+
+}
+
+function exer44(){
+    let cont = 1;
+    let soma = null;
+
+    while(cont <= 100){
+        soma = soma + cont;
+        cont++;
+    }
+
+    alert(`A soma entre os cem primeiros números é: ${soma}`)
+}
+
+function exer45(){
+    let cont = 0;
+    let soma = null;
+
+    while(cont <= 500){
+        if(cont % 2 == 0){
+            soma = soma + cont
+        }
+
+        cont++
+    }
+
+    alert(`A soma entre os valores pares entre 0 até 500 é: ${soma}`)
+}
     
+function exer46(){
+    let cont = 0;
+    let impar = Array();
+
+    while(cont <= 20){
+        if(cont % 2 == 1) {
+            impar.push(cont)
+        }
+    
+        cont++;
+    }
+    alert(`Esses valores são impares: ${impar}`)
+}
+
+function exer47(){
+    let numero = null;
+    let cont = null;
+    let result = null;
+
+    while (cont < 15){
+        result = Math.pow(cont, 3)
+        cont++
+        console.log(`${cont}³ = ${result}`);
+    }
+
+    alert("Verifique o console para ver o resultado.")
+    
+}
+
+function exer48(){
+    let base = parseInt(prompt("Informe um valor para a base:"));
+    let exp = parseInt(prompt("Informe o valor do expoente: "));
+    let cont  = 1;
+    let potencia = 1;
+    
+    while(cont <= exp){
+        potencia = potencia * base
+        cont++;
+    }
+
+    alert(`${base} elevado a ${exp} = ${potencia}`)
+   
+}
+
+function exer49(){
+    let contador = 1;
+    let anterior = 0;
+    let atual = 0;
+    let proximo = 1;
+    result = Array();
+    console.log(atual)
+
+    while(contador < 16) {
+        result.push(proximo)
+        
+        anterior = atual // 0 // 1 // 1 // 2 // 3 // 5 //...
+        atual = proximo // 1 // 1 // 2 // 3 // 5 // 8 ... 
+        proximo = atual + anterior // 1 + 0 = 1 // 1 + 1 = 2 // 1 + 2 = 3 // 2 + 3 = 5 // 3 + 5 = 8 // 5 + 8 = 13 ...
+        
+        contador++;
+    }
+
+    alert(`${result}`)
+}
+
+function exer50(){
+    let celsius = 10;
+    let farh = Array();
+    let result = Array();
+    let celsiusArray = Array();
+
+    while(celsius <= 100){
+        farh = (9 * celsius + 160) / 5
+        
+        result.push(farh)
+        celsiusArray.push(celsius);
+        celsius += 10
+    }
+
+    alert(`${celsiusArray[0]}C° = ${result[0]}F° 
+${celsiusArray[1]}C° = ${result[1]}F°
+${celsiusArray[2]}C° = ${result[2]}F°
+${celsiusArray[3]}C° = ${result[3]}F°
+${celsiusArray[4]}C° = ${result[4]}F°
+${celsiusArray[5]}C° = ${result[5]}F°
+${celsiusArray[6]}C° = ${result[6]}F°
+${celsiusArray[7]}C° = ${result[7]}F°
+${celsiusArray[8]}C° = ${result[8]}F°
+${celsiusArray[9]}C° = ${result[9]}F°
+
+`)
+}
+
+function exer51(){
+    let soma = 0;
+    let index = 1;
+
+    while(index <= 10){
+        let valor = parseInt(prompt("Digite um valor: "))
+        soma += valor
+
+        index++;
+    }
+
+
+    alert(`A soma total dos valores é: ${soma} 
+A média aritmética dos valores é: ${soma / 10}`)
+}
+
+function exer52(){
+    let soma = 0;
+    let index = 50;
+
+    while(index <= 70){
+        soma += index;
+
+        index += 2
+    }
+
+    alert(`A soma entre os valores pares dentro dessa faixa é: ${soma}
+A média aritmética dos valores é: ${soma / 10}`)
+}
+
+function exer53(){
+    let soma = null;
+    let menu = null;
+   
+    while(menu !== "N"){
+        let nome = prompt("Informe  o nome do comodo a ser calculado: ");
+        let largura = parseInt(prompt("Largura² do comodo"));
+        let comprimeiro = parseInt(prompt("Comprimento² do comodo"));
+        let area = largura * comprimeiro
+        alert(`A area de ${nome} é: ${area}cm²`) 
+
+        soma += area
+        menu = prompt(`Deseja calcular outro comodo ? [S] - SIM || [N] - NÃO`)
+        menu = menu.toUpperCase();
+    } 
+
+    alert(`A residencia possui ${soma}cm² de area total`) 
+}
+
+function exer54(){
+    let numero = 0;
+    let maior = 0;
+    let menor = 0;
+
+    while(numero >= 0){
+        numero = parseInt(prompt("Digite um numero POSITIVO para continuar ou NEGATIVO para encerrar: "))
+
+        if(numero > 0){
+
+            if(numero > maior) {
+                maior = numero
+            }else if(numero < menor){
+                menor = numero
+            }
+
+        } else {
+            menor = numero
+        }
+    }
+
+    alert(`O maior número digitado foi: ${maior} 
+        O menor número digitado foi: ${menor}`)
+}
+
+function exer55(){
+    for(let i = 15; i <= 200; i++){
+        let soma = i * i
+
+        console.log(`${i}² = ${soma}`)
+
+    }
+
+    alert("Confira o console para ver  o resultado: ")
+}
+
+function exer56(){
+    let soma = null;
+
+    for(let i = 0; i <= 500; i+= 2){
+        soma += i
+    }
+
+    alert(`A soma entre os valores pares existentes entre 1 até 500 é: ${soma}`)
+}
+
+function exer57(){
+    for(let i = 1; i <= 200; i++){
+
+        i % 4 == 0 ? console.log(`O valor ${i} é divisivel por 4 (${i} / 4 = ${i / 4})`) : null
+    }
+
+    alert("Verifique o console para ver o resultado!");
+}
+
+function exer58(){
+    let soma = null;
+    let grao = 1;
+
+    for(let quad = 1; quad < 64; quad++){
+        grao *= 2 
+        soma += grao 
+    }
+
+    alert(`A soma dos grãos de trigo  em um tabuleiro é: ${soma}`)
+}
+
+function exer59(){
+    let valor = parseInt(prompt("Digite um valor: "));
+
+}

@@ -59,24 +59,6 @@ function windowScrollMooth(to){
 }
 
 
-/* ------- Navbar Fixed ----- */
-
-window.addEventListener('scroll', alturaScroll)
-
-function alturaScroll(){
-    const navbar = document.querySelector('.container_nav');
-    const sobre = document.querySelector('#container_sobre');
-    let altura = sobre.offsetTop;
-    let windowTopo = window.pageYOffset;
-    
-    if(windowTopo >= altura) {
-        navbar.classList.add('navbarFixed');
-       
-    } else {
-        navbar.classList.remove('navbarFixed');
-
-    }
-}
 
 
 
