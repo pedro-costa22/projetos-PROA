@@ -898,6 +898,59 @@ function exer58(){
 }
 
 function exer59(){
-    let valor = parseInt(prompt("Digite um valor: "));
+    
 
 }
+
+
+function exer62(){
+    let soma = null;
+    let menu = null;
+
+    for(let i = menu; i !== "N"; i = menu){
+        let nome = prompt("Informe  o nome do comodo a ser calculado: ");
+        let largura = parseInt(prompt("Largura² do comodo"));
+        let comprimeiro = parseInt(prompt("Comprimento² do comodo"));
+        let area = largura * comprimeiro
+        alert(`A area de ${nome} é: ${area}cm²`) 
+
+        soma += area
+        menu = prompt(`Deseja calcular outro comodo ? [S] - SIM || [N] - NÃO`)
+        menu = menu.toUpperCase();
+    }
+
+    alert(`A residencia possui ${soma}cm² de area total`) 
+    
+}
+
+function exer63(){
+    let num = 0;
+    let maior = 0;
+    let menor = 0;
+
+    for(let i = num; i >= 0; i = num){
+        num = parseInt(prompt("Digite um valor: "));
+
+        if(num > maior) {
+            maior = num
+
+        }else if(num < menor) {
+            menor = num
+        }
+    }
+
+    alert(`O maior valor digitado foi: ${maior} 
+            O menor valor digitado foi: ${menor}`)
+}
+
+function exer64(){
+    let result = 0;
+    let dividendo = parseInt(prompt("Digite o valor do Dividendo: "))
+    let divisor = parseInt(prompt("Digite o valor do Divisor: "))
+
+    
+}
+
+
+
+
