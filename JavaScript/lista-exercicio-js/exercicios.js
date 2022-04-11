@@ -708,9 +708,9 @@ function exer47(){
     let result = null;
 
     while (cont < 15){
-        result = Math.pow(cont, 3)
+        result = Math.pow(3, cont)
         cont++
-        console.log(`${cont}³ = ${result}`);
+        console.log(`${3}^${cont} = ${result}`);
     }
 
     alert("Verifique o console para ver o resultado.")
@@ -898,10 +898,53 @@ function exer58(){
 }
 
 function exer59(){
-    
+    let valor = Array(); 
+    let acumulador = 1; 
+    let acumuladorDois = 0; 
 
+    for (let i = 0; i < 15; i++) {
+        valor[i] = parseInt(prompt("Digite um valor"))
+
+        for (let z = valor[i]; z >= 1; z--) {
+            acumulador = acumulador * z;
+            console.log(acumulador);
+            
+            if (z == 1) {
+                acumuladorDois += acumulador; 
+                acumulador = 1; 
+            }
+        }
+    }
+    alert(`A soma total dos fatoriais foi de ${acumuladorDois}`);
 }
 
+function exer61(){
+    let valor = Array(); 
+    let acumulador = 1; 
+    let acumuladorDois = 0; 
+
+    for (let index = 1; index <= 5; index++) {
+        if (index % 2 != 0) {
+            valor.push(index) 
+        }
+    }
+
+    for (let zindex = 0; zindex <= valor.length; zindex++) {
+    
+        for (let yindex = valor[zindex]; yindex >= 1; yindex--) {
+            acumulador = acumulador * yindex;
+           
+            if (yindex == 1) {
+                acumuladorDois += acumulador; 
+               
+                acumulador = 1; 
+            }
+        }
+    }
+
+
+    alert("A soma fatorial de todos os número ímpares de 1 até 10 é: " + acumuladorDois);
+}
 
 function exer62(){
     let soma = null;
@@ -951,6 +994,205 @@ function exer64(){
     
 }
 
+function exer65(){
+    let i = 15;
+    let soma = null;
+
+    do {
+        soma = i * i
+        console.log(`${i}² = ${soma}`)
+        i++
+
+    } while (i <= 200);
+
+    alert("Verifique o console para ver  o resultado")
+}
+
+function exer66(){
+    let num = parseInt(prompt("Digite um número"));
+    let cont = 1
+    let mult = null;
+
+    do {
+        mult = cont * num
+        console.log(`${num} x ${cont} = ${mult}`)
+        cont++
+
+    } while (cont < 11);
+
+    alert("Verifique o console para ver o resultado!")
+}
+
+function exer67(){
+    let i = 1;
+    let soma = 0;
+
+    do {
+        soma = soma + i
+        i++
+    } while (i <= 100);
+
+    alert(`A soma total entre os numeros inteiros de 10 a 100 é: ${soma}`);
+}
+
+function exer68(){
+    let cont = 1;
+    let soma = null;
+
+    do {
+        if(cont % 2 === 0){
+            soma = soma + cont
+        }
+
+        cont++
+        
+    } while (cont <= 500);
+
+    alert("A soma total entre os valores pares é: " + soma)
+}
+
+function exer69(){
+    let cont = 1;
+    let result = [];
+
+    do {
+        if(cont % 2 !== 0){
+            result.push(cont)
+        }
+
+        cont++;
+    } while (cont < 21);
+
+    alert(result)
+}
+
+function exer70(){
+    let cont = 1;
+
+    do {
+        if(cont % 2 === 0){
+            console.log(`${cont} é divisivel por 4! ${cont} / 4 = ${cont / 4}`);
+        }
+
+        cont++
+    } while (cont <= 200);
+
+    alert("Verifique o console para ver o resultado!")
+}
+
+function exer71(){
+    let cont = 0;
+    let result = null;
+    
+    do {
+        result = Math.pow(3, cont);
+        console.log(`${3}^${cont} = ${result}`);
+        cont++;
+    } while (cont <= 15);
+
+    alert("Verifique o console para ver o resultado.") 
+}
+
+function exer72(){
+    let base = parseInt(prompt("Digite um valor para a base: "));
+    let expoente = parseInt(prompt("Digite um valor para o expoente"));
+    let cont = 1;
+    let potencia = 1;
+
+    do {
+        potencia = potencia * base
+        cont++;
+        
+    } while (cont <= expoente);
+
+    alert(`A soma final é: ${potencia}`)
+}
+
+function exer73(){
+    let contador = 1;
+    let anterior = 0;
+    let atual = 0;
+    let proximo = 1;
+    result = Array();
+    console.log(atual)
+
+    do {
+        result.push(proximo)
+        anterior = atual
+        atual =  proximo
+        proximo = atual + anterior
+
+        contador++;
+        
+    } while (contador <= 15);
+
+    alert(`Sequencia: ${result}`)
+
+}
+
+function exer74(){
+    let celsius = 10;
+    let farh = Array();
+    let result = Array();
+    let celsiusArray = Array();
+
+    do {
+        farh = (9 * celsius + 160) / 5
+        result.push(farh)
+        celsiusArray.push(celsius)
+        celsius +=10 
+    } while (celsius <= 100);
+
+
+    alert(`${celsiusArray[0]}C° = ${result[0]}F° 
+${celsiusArray[1]}C° = ${result[1]}F°
+${celsiusArray[2]}C° = ${result[2]}F°
+${celsiusArray[3]}C° = ${result[3]}F°
+${celsiusArray[4]}C° = ${result[4]}F°
+${celsiusArray[5]}C° = ${result[5]}F°
+${celsiusArray[6]}C° = ${result[6]}F°
+${celsiusArray[7]}C° = ${result[7]}F°
+${celsiusArray[8]}C° = ${result[8]}F°
+${celsiusArray[9]}C° = ${result[9]}F°
+
+`)
+}
+
+function exer75(){
+    let valor = Array(); 
+    let acumulador = 1; 
+    let acumuladorDois = 0; 
+
+    let index = 1;
+    let zindex = 0;
+    let yindex = valor[zindex];
+
+    do {
+        if(index % 2 !== 0) {
+            valor.push(index)
+        }
+
+        index++;
+    } while (index <= 5);
+
+
+    do {
+        do {
+            acumulador = acumulador * yindex;
+            if(yindex == 1) {
+                acumuladorDois += acumulador;
+                acumulador = 1;
+            }
+
+            yindex--
+        } while (yindex >= 1);
+
+        zindex++;
+        
+    } while (zindex <= valor.length);
+
+    alert("A soma fatorial de todos os número ímpares de 1 até 10 é: " + acumuladorDois); 
+}
 
 
 
