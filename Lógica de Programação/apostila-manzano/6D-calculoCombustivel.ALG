@@ -1,4 +1,6 @@
 Algoritmo "Calculo quantidade de combustível gasto"
+//  
+//  
 // 
 //  
 // Descrição   : Calcula o combustível gasto durante uma viagem.

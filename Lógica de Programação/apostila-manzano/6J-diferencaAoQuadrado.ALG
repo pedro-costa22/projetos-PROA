@@ -1,4 +1,6 @@
 Algoritmo "Diferença ao quadrado"
+//  
+//  
 // 
 //  
 // Descrição   : Recebe dois valores e calcula o valor ao quadrado da diferença entre eles.

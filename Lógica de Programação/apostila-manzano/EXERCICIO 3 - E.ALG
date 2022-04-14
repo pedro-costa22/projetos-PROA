@@ -1,4 +1,6 @@
 Algoritmo "Exercicio 3 - EE"
+//  
+//  
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Jailson Obama
 // Descrição   : Aqui você descreve o que o programa faz! (função)
