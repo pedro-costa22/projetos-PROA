@@ -4,7 +4,7 @@ import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
 export default function MovieRow({title, items}) {
 
-    const [scrollX, setScrollX] = useState(-400);
+    const [scrollX, setScrollX] = useState(0);
 
     const handleLeftArrow = () => {
         let x = scrollX + Math.round(window.innerWidth / 2);

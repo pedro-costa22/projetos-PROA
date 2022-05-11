@@ -9,6 +9,13 @@ function FeaturedMovie({item}){
         genres.push(item.genres[i].name)
     }
 
+    let description = item.overview;
+    if(description.length > 200) {
+        description = description.substring(0, 200)+ '...';
+    }
+
+
+
     return(
         <div>
             <section className="featured" style={{
@@ -24,7 +31,7 @@ function FeaturedMovie({item}){
                             <div className="featured_year">{firstDate.getFullYear()}</div>
                             <div className="featured_seasons">{item.number_of_seasons} temporada{item.number_of_seasons !== 1? 's' : ''}</div>
                         </div>
-                        <div className="featured_description">{item.overview}</div>
+                        <div className="featured_description">{description}</div>
                         <div className="featured_buttons">
                             <a href={`/watch/${item.id}`} className="btn-watch"> ► Assistir</a>
                             <a href={`/list/add/${item.id}`} className="btn-list">+ Minha lista</a>
