@@ -1,0 +1,745 @@
+body {
+    background-color: #000;
+}
+
+.home_topo {
+    display: flex;
+    width: 100%;
+    height: 78vh;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ebff1e0f-5704-423f-b4c6-94914dabe25b/cb7c1f4e-1052-40ae-b74a-5f125133aebd/BR-pt-20220509-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background_topo {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #000 0%, transparent 50%),
+    linear-gradient(to bottom, #000 0%, transparent 50%);
+    border-bottom: 8px solid #222;
+}
+
+.navbar_home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+}
+
+.navbar_home .logo{
+   height: 100px;
+}
+
+.navbar_home .logo img {
+    height: 100%;
+}
+
+.btn_entrar {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    background-color: #e50914;
+    padding: 7px 12px;
+    border-radius: 3px;
+}
+
+.content_topo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    margin: 0 auto;
+    height: 78vh;
+}
+
+.content_topo h1 {
+    width: 800px;
+    font-size: 4rem;
+    text-align: center;
+    margin: 5px;
+}
+
+.content_topo h2 {
+    font-size: 1.6rem;
+    font-weight: 450;
+    margin: 5px;
+}
+
+.form_topo h3 {
+    font-size: 1.2;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.input_form {
+    display: flex;
+}
+
+
+.form_topo input {
+    width: 500px;
+    height: 70px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+}
+
+.labelEmail {
+    position: absolute;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: bold;
+    color: rgb(133, 133, 133);
+    transition: all ease .2s;
+}
+
+.labelEmail.labelTop {
+    transition: all ease .2s;
+    align-items: flex-start;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+
+.form_topo button {
+    font-size: 1.9rem;
+    height: 70px;
+    width: 200px;
+    background: #e50914;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.form_topo button:hover {
+    background: #fa131f;
+}
+
+.AiOutlineRight {
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
+
+
+/* ---- Aproveita na TV ---- */
+
+.cont_aproveite, .content_baixar, .cont_assista, .cont_kids {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 470px;
+    padding: 70px 45px;
+    border-bottom: 8px solid #222;
+}
+
+.aproveite, .baixar, .assista, .kids_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1120px;
+}
+
+.aproveite_text, .baixar_text, .assista_text, .kids_text {
+    width: 52%;
+    height: 100%;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+}
+
+.aproveite_text h1, .baixar_text h1, .assista_text h1, .kids_text h1{
+    font-size: 3.1rem;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+
+.aproveite_text h2, .baixar_text h2, .assista_text h2, .kids_text h2{
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.aproveite_img img{
+    width: 550px;
+}
+
+.moldura_tv{
+    position: relative;
+}
+
+.video_tv {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    z-index: -1;
+    
+}
+
+.video_tv video{
+    width: 365px;
+   
+}
+
+/* ---- Downloado ---- */
+
+.baixar_img img {
+    width: 320px;
+}
+
+.baixar_img {
+    position: relative;
+}
+
+.cont_download {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 5px 10px;
+    background: #000;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.75rem;
+}
+
+.cont_items {
+    display: flex;
+    flex-direction: row;
+}
+
+.cont_items img {
+    width: 55px;
+    margin-right: 15px;
+}
+
+.cont_download p {
+    font-size: 1rem;
+    width: 110px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.gifDownload img{
+    width: 50px;
+}
+
+/* ---- Assista quando quiser ---- */
+
+.cont_video img {
+    width: 540px;
+}
+
+.cont_video {
+    position: relative;
+}
+
+.video_assista {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    z-index: -1;
+}
+
+.video_assista video {
+    width: 355px;
+}
+
+
+/* ---- perfil para crianças ---- */
+
+.kids_img img{
+    width: 500px;
+}
+
+/* ---- Perguntas ---- */
+
+.cont_ask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    border-bottom: 8px solid #222;
+}
+
+.cont_ask h1 {
+    font-size: 3.1rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.cont_ask ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: -webkit-match-parent;
+    list-style: none;
+}
+
+.ask_items {
+    width: 850px;
+}
+
+.ask {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem 0 2.2rem;
+    font-weight: 400;
+    width: 100%;
+    height: 70px;
+    border: 0;
+    background: #303030;
+    color: #fff;
+    text-align: left;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.faPlus {
+    font-size: 2.2rem;
+}
+
+.cont_ask h3 {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.answer {
+    display: none; 
+    margin-top: 1px;
+    padding: 30px;
+    padding-left: 2.2rem;
+    background: #303030;
+    font-size: 1.6rem;
+    color: #f9f9f9f9;
+}
+
+.cont_ask form {
+    margin-bottom: 20px;
+}
+
+.answer.active {
+    display: block;
+}
+
+/* ---- Perguntas ---- */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.footer_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 870px;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.footer_items p, .footer p a {
+    color: #757575;
+    font-size: 1rem;
+    text-decoration: none;
+    
+}
+
+.footer p a:hover{
+    text-decoration: underline;
+}
+
+
+.cont_itemFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 870px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+.lista ul li {
+    list-style: none;
+    padding: 7px 0;
+}
+
+.lista ul li a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.lista ul li a:hover{
+    text-decoration: underline;
+}
+
+.cont_itemFooter select {
+    margin-top: 10px;
+    background-color: #000;
+    color: #999;
+    font-size: 16px;
+    line-height: 1.7;
+    border: 1px solid #333;
+    height: 50px;
+}
+
+.cont_itemFooter select::before{
+    color: #000;
+    font-size: 16px;
+    position: absolute;
+    pointer-events: none;
+
+}
+
+.lista span {
+    margin: 20px 0 30px 0;
+    font-size: 14px;
+    color: #757575;
+}
+
+
+
+/* --- Responsividade --- */
+
+@media screen and (max-width: 575.98px) {
+    .navbar_home .logo{
+        height: 75px;
+     }
+
+     .content_topo {
+         width: 450px;
+     }
+
+     .content_topo h1 {
+         font-size: 3.1rem;
+         width: 450px;
+     }
+
+     .input_form {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+
+     .form_topo button{
+         margin-top: 10px;
+         font-size: 1rem;
+         width: 130px;
+         height: 45px;
+     }
+
+     .aproveite_img img, .cont_video img, .kids_img img {
+         width: 450px;
+     }
+
+     .video_tv video, .video_assista video{
+        width: 280px;
+    
+    }
+
+
+
+  
+
+     .form_topo input {
+         width: 400px;
+         height: 50px;
+     }
+
+     .AiOutlineRight {
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+
+    .aproveite_text, .baixar_text, .assista_text, .kids_text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .cont_aproveite, .content_baixar, .cont_assista, .cont_kids {
+        height: 100%;
+    }
+
+    .aproveite, .assista {
+        flex-direction: column;
+    }
+
+    .baixar, .kids_items {
+        flex-direction: column-reverse;
+    }
+
+    .aproveite_text h1, .baixar_text h1, .assista_text h1, .kids_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .aproveite_text h2, .baixar_text h2, .assista_text h2, .kids_text h2 {
+        font-size: 1.25rem;
+    }
+
+    .baixar {
+        width: 450px;
+    }
+
+    .content_baixar {
+        flex-direction: column-reverse;
+    }
+
+    
+    .cont_ask h1{
+        font-size: 2.5rem;
+    }
+
+    .ask_items {
+        width: 450px;
+       
+    }
+
+    .ask {
+        align-items: center;
+        font-size: 1.3rem;
+        width: 400px;
+        height: 60px;
+    }
+
+    .footer_items, .cont_itemFooter {
+        width: 450px;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+        width: 450px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .navbar_home .logo{
+        height: 75px;
+     }
+
+     .content_topo {
+         width: 576px;
+     }
+
+     .content_topo h1 {
+         font-size: 3.1rem;
+         width: 576px;
+     }
+
+     .input_form {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+
+     .form_topo button{
+         margin-top: 10px;
+         font-size: 1rem;
+         width: 130px;
+         height: 45px;
+     }
+
+     .AiOutlineRight {
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+
+    .aproveite_text, .baixar_text, .assista_text, .kids_text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .cont_aproveite, .content_baixar, .cont_assista, .cont_kids {
+        height: 100%;
+    }
+
+    .aproveite, .assista {
+        flex-direction: column;
+    }
+
+    .baixar, .kids_items {
+        flex-direction: column-reverse;
+    }
+
+    .aproveite_text h1, .baixar_text h1, .assista_text h1, .kids_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .aproveite_text h2, .baixar_text h2, .assista_text h2, .kids_text h2 {
+        font-size: 1.25rem;
+    }
+
+    .baixar {
+        width: 576px;
+    }
+
+    .content_baixar {
+        flex-direction: column-reverse;
+    }
+
+    
+    .cont_ask h1{
+        font-size: 2.5rem;
+    }
+
+    .ask_items {
+        width: 576px;
+       
+    }
+
+    .ask {
+        align-items: center;
+        font-size: 1.3rem;
+        width: 500px;
+        height: 60px;
+    }
+
+    .footer_items, .cont_itemFooter {
+        width: 540px;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+        width: 500px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .navbar_home .logo{
+        height: 75px;
+     }
+
+     .content_topo {
+         width: 768px;
+     }
+
+     .content_topo h1 {
+         font-size: 3.1rem;
+         width: 700px;
+     }
+
+     .input_form {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+
+     .form_topo button{
+         margin-top: 10px;
+         font-size: 1rem;
+         width: 130px;
+         height: 45px;
+     }
+
+     .AiOutlineRight {
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+
+    .aproveite_text, .baixar_text, .assista_text, .kids_text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .cont_aproveite, .content_baixar, .cont_assista, .cont_kids {
+        height: 100%;
+    }
+
+    .aproveite, .assista {
+        flex-direction: column;
+    }
+
+    .baixar, .kids_items {
+        flex-direction: column-reverse;
+    }
+
+    .aproveite_text h1, .baixar_text h1, .assista_text h1, .kids_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .aproveite_text h2, .baixar_text h2, .assista_text h2, .kids_text h2 {
+        font-size: 1.25rem;
+    }
+
+    .baixar {
+        width: 768px;
+    }
+
+    .content_baixar {
+        flex-direction: column-reverse;
+    }
+
+    
+
+    .cont_ask h1{
+        font-size: 2.5rem;
+    }
+
+    .ask_items {
+        width: 768px;
+       
+    }
+
+    .ask {
+        align-items: center;
+        font-size: 1.3rem;
+        width: 700px;
+        height: 60px;
+    }
+
+    .footer_items, .cont_itemFooter {
+        width: 740px;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+        width: 700px;
+    }
+
+        
+}
+
+
+
+
+
