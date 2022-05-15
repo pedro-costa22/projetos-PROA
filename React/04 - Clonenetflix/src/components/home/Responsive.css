@@ -1,0 +1,308 @@
+
+/* --- Responsividade --- */
+
+@media screen and (max-width: 575.98px) {
+    .navbar_home .logo{
+        height: 75px;
+     }
+
+     .content_topo {
+         width: 450px;
+     }
+
+     .content_topo h1 {
+         font-size: 3.1rem;
+         width: 450px;
+     }
+
+     .input_form {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+
+     .form_topo button{
+         margin-top: 10px;
+         font-size: 1rem;
+         width: 130px;
+         height: 45px;
+     }
+
+     .aproveite_img img, .cont_video img, .kids_img img {
+         width: 450px;
+     }
+
+     .video_tv video, .video_assista video{
+        width: 280px;
+    
+    }
+
+     .form_topo input {
+         width: 400px;
+         height: 50px;
+     }
+
+     .AiOutlineRight {
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+
+    .aproveite_text, .baixar_text, .assista_text, .kids_text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .cont_aproveite, .content_baixar, .cont_assista, .cont_kids {
+        height: 100%;
+    }
+
+    .aproveite, .assista {
+        flex-direction: column;
+    }
+
+    .baixar, .kids_items {
+        flex-direction: column-reverse;
+    }
+
+    .aproveite_text h1, .baixar_text h1, .assista_text h1, .kids_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .aproveite_text h2, .baixar_text h2, .assista_text h2, .kids_text h2 {
+        font-size: 1.25rem;
+    }
+
+    .baixar {
+        width: 450px;
+    }
+
+    .content_baixar {
+        flex-direction: column-reverse;
+    }
+
+    
+    .cont_ask h1{
+        font-size: 2.5rem;
+    }
+
+    .ask_items {
+        width: 450px;
+       
+    }
+
+    .ask {
+        align-items: center;
+        font-size: 1.3rem;
+        width: 400px;
+        height: 60px;
+    }
+
+    .footer_items, .cont_itemFooter {
+        width: 450px;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+        width: 450px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .navbar_home .logo{
+        height: 75px;
+     }
+
+     .content_topo {
+         width: 576px;
+     }
+
+     .content_topo h1 {
+         font-size: 3.1rem;
+         width: 576px;
+     }
+
+     .input_form {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+
+     .form_topo button{
+         margin-top: 10px;
+         font-size: 1rem;
+         width: 130px;
+         height: 45px;
+     }
+
+     .AiOutlineRight {
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+
+    .aproveite_text, .baixar_text, .assista_text, .kids_text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .cont_aproveite, .content_baixar, .cont_assista, .cont_kids {
+        height: 100%;
+    }
+
+    .aproveite, .assista {
+        flex-direction: column;
+    }
+
+    .baixar, .kids_items {
+        flex-direction: column-reverse;
+    }
+
+    .aproveite_text h1, .baixar_text h1, .assista_text h1, .kids_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .aproveite_text h2, .baixar_text h2, .assista_text h2, .kids_text h2 {
+        font-size: 1.25rem;
+    }
+
+    .baixar {
+        width: 576px;
+    }
+
+    .content_baixar {
+        flex-direction: column-reverse;
+    }
+
+    
+    .cont_ask h1{
+        font-size: 2.5rem;
+    }
+
+    .ask_items {
+        width: 576px;
+       
+    }
+
+    .ask {
+        align-items: center;
+        font-size: 1.3rem;
+        width: 500px;
+        height: 60px;
+    }
+
+    .footer_items, .cont_itemFooter {
+        width: 540px;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+        width: 500px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .navbar_home .logo{
+        height: 75px;
+     }
+
+     .content_topo {
+         width: 768px;
+     }
+
+     .content_topo h1 {
+         font-size: 3.1rem;
+         width: 700px;
+     }
+
+     .input_form {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+
+     .form_topo button{
+         margin-top: 10px;
+         font-size: 1rem;
+         width: 130px;
+         height: 45px;
+     }
+
+     .AiOutlineRight {
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+
+    .aproveite_text, .baixar_text, .assista_text, .kids_text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .cont_aproveite, .content_baixar, .cont_assista, .cont_kids {
+        height: 100%;
+    }
+
+    .aproveite, .assista {
+        flex-direction: column;
+    }
+
+    .baixar, .kids_items {
+        flex-direction: column-reverse;
+    }
+
+    .aproveite_text h1, .baixar_text h1, .assista_text h1, .kids_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .aproveite_text h2, .baixar_text h2, .assista_text h2, .kids_text h2 {
+        font-size: 1.25rem;
+    }
+
+    .baixar {
+        width: 768px;
+    }
+
+    .content_baixar {
+        flex-direction: column-reverse;
+    }
+
+    
+
+    .cont_ask h1{
+        font-size: 2.5rem;
+    }
+
+    .ask_items {
+        width: 768px;
+       
+    }
+
+    .ask {
+        align-items: center;
+        font-size: 1.3rem;
+        width: 700px;
+        height: 60px;
+    }
+
+    .footer_items, .cont_itemFooter {
+        width: 740px;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+        width: 700px;
+    }
+
+        
+}
+
+
+
+
+

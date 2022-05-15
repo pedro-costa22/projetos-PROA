@@ -6,6 +6,8 @@ import FeaturedMovie from './components/FeaturedMovie';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import Login from './components/Login/Login';
+import Perfil from './components/Perfil/Perfil';
 
 export default () =>{
 
@@ -48,7 +50,7 @@ export default () =>{
 
   return (
 
-    /*
+   /* 
     <div className='page'>
       <Header black={blackHeader}/>
 
@@ -72,7 +74,9 @@ export default () =>{
     
     </div> */
 
-    
-    <Home />
+    //<Home />
+    //<Login />
+    <Perfil />
+
   ) 
 }
