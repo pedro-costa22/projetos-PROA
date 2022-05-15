@@ -1,6 +1,5 @@
 import React from "react";
 import './Assista.css';
-import '../Responsive.css';
 
 function Assista(){
     return(

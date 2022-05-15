@@ -72,6 +72,7 @@
     line-height: 1.7;
     border: 1px solid #333;
     height: 50px;
+    padding-left: 10px;
 }
 
 .cont_itemFooter select::before{
@@ -87,4 +88,35 @@
     font-size: 14px;
     color: #757575;
 }
+
+
+
+/* --- Responsividade --- */
+
+@media screen and (max-width: 575.98px) {
+    .footer_items, .cont_itemFooter {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .footer_items, .cont_itemFooter {
+        width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+   
+
+    .footer_items, .cont_itemFooter {
+        width: 740px;
+    }
+
+   
+}
+
+
+
+
+
 

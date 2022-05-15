@@ -1,15 +1,17 @@
 import React from "react";
 import './Perguntas.css';
 import { AiOutlinePlus, AiOutlineRight } from "react-icons/ai";
-import '../Responsive.css';
 
 function Perguntas(){
 
     function openAsk(i){
+
         let respostas = document.querySelectorAll('.answer');
+        
         for(let n = 0; n <= respostas.length; n++) {
             if(respostas[n] === respostas[i]){
                 respostas[i].classList.toggle('active'); 
+               
 
             }else {
                 respostas[n].classList.remove('active');  

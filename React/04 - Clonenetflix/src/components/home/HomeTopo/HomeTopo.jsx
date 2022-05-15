@@ -1,8 +1,7 @@
 import React from "react";
 import './HomeTopo.css';
 import { AiOutlinePlus, AiOutlineRight } from "react-icons/ai";
-import '../Responsive.css';
-
+import { Link } from 'react-router-dom';
 
 
 function HomeTopo(){
@@ -17,9 +16,18 @@ function HomeTopo(){
                     </a>
                 </div>
 
-                <div className="btn_entrar">
-                <a href='' className="btn_entrar"> Entrar </a>
-                </div>
+               <div className="right">
+                <select className="idiomas">
+                        <option>Português</option>
+                        <option> English</option>
+                    </select>
+                
+                    <Link to="/login" className="btn_entrarLink">
+                    <div className="btn_entrar">
+                        <a href='' className="btn_entrar">Entrar </a>
+                    </div>
+                    </Link>
+               </div>
             </div>
 
             <div className="content_topo">

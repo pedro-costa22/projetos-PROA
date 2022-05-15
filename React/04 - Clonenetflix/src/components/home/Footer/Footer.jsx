@@ -1,6 +1,5 @@
 import React from "react";
 import './Footer.css';
-import '../Responsive.css';
 
 function Footer(){
     return(
@@ -19,7 +18,7 @@ function Footer(){
                 </ul>
 
                 <select className="idiomas">
-                    <option> Português</option>
+                    <option>Português</option>
                     <option> English</option>
                 </select>
 

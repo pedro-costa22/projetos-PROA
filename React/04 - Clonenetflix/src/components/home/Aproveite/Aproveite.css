@@ -54,3 +54,112 @@
     width: 365px;
    
 }
+
+
+
+
+
+
+/* --- Responsividade --- */
+
+@media screen and (max-width: 575.98px) {
+   
+     .aproveite_img img {
+         width: 450px;
+     }
+
+     .video_tv video{
+        width: 280px;
+    
+    }
+
+    
+    .aproveite_text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .cont_aproveite{
+        height: 100%;
+    }
+
+    .aproveite{
+        flex-direction: column;
+    }
+
+ 
+
+    .aproveite_text h1{
+        font-size: 2.5rem;
+    }
+
+    .aproveite_text h2{
+        font-size: 1.25rem;
+    }
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+   
+    .aproveite_text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .cont_aproveite{
+        height: 100%;
+    }
+
+    .aproveite{
+        flex-direction: column;
+    }
+
+   
+    .aproveite_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .aproveite_text h2 {
+        font-size: 1.25rem;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+   
+
+    .aproveite_text{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .cont_aproveite {
+       height: 100%;
+    }
+
+    .aproveite {
+        flex-direction: column;
+       
+    }
+
+    .aproveite_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .aproveite_text h2 {
+        font-size: 1.25rem;
+    }
+
+  
+        
+}
+
+
+
+
+

@@ -1,6 +1,7 @@
 import React from "react";
 import './Login.css';
 import { FaCheck } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Login(){
 
@@ -34,7 +35,9 @@ function Login(){
                         <input type='email' placeholder="Email ou número de telefone" />
                         <input type='password' placeholder="Senha" />
 
-                        <a href="">Entrar</a>
+                        <Link to="/perfil">
+                            <a href="">Entrar</a>
+                        </Link>
                     </form>
 
                     <div className="suporte_login">

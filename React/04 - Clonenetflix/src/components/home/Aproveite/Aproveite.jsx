@@ -1,9 +1,9 @@
 import React from "react";
 import './Aproveite.css';
-import '../Responsive.css';
+import moldura from '../../../img/molduraTv.png';
 
 
-function Aproveite({moldura}){
+function Aproveite(){
     return(
         <div className="cont_aproveite">
         <div className="aproveite">

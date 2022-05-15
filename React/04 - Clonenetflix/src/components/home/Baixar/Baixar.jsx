@@ -1,8 +1,8 @@
 import React from "react";
 import './Baixar.css';
-import '../Responsive.css';
+import baixar from '../../../img/baixar.png';
 
-function BaixarDiv({baixar}){
+function BaixarDiv(){
     return(
         <div className="content_baixar">
         <div className="baixar">

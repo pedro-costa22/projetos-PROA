@@ -1,6 +1,5 @@
 import React from "react";
 import './Kids.css';
-import '../Responsive.css';
 
 function Kids(){
     return(
